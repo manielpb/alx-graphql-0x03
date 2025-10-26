@@ -1,4 +1,4 @@
-import { useQuery } from "@apollo/client/react";
+/*import { useQuery } from "@apollo/client/react";
 import { GET_EPISODES } from "@/graphql/queries"
 import { EpisodeProps } from "@/interfaces";
 import EpisodeCard from "@/components/common/EpisodeCard"
@@ -65,4 +65,18 @@ const Home: React.FC = () => {
 
 };
 
-export default Home
+export default Home*/
+
+
+import ErrorBoundary from "@/components/ErrorBoundary";
+import ErrorProneComponent from "@/components/ErrorProneComponent";
+
+const Home: React.FC = () => {
+  return (
+    <ErrorBoundary>
+      <ErrorProneComponent />
+    </ErrorBoundary>
+  );
+};
+
+export default Home;
